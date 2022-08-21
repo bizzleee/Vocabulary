@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		0B44A90428B19FDE00DD0C68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B44A90328B19FDE00DD0C68 /* AppDelegate.swift */; };
 		0B44A90628B19FDE00DD0C68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B44A90528B19FDE00DD0C68 /* SceneDelegate.swift */; };
-		0B44A90828B19FDE00DD0C68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B44A90728B19FDE00DD0C68 /* ViewController.swift */; };
+		0B44A90828B19FDE00DD0C68 /* LanguagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B44A90728B19FDE00DD0C68 /* LanguagesViewController.swift */; };
 		0B44A90B28B19FDE00DD0C68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B44A90928B19FDE00DD0C68 /* Main.storyboard */; };
 		0B44A90D28B19FE200DD0C68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B44A90C28B19FE200DD0C68 /* Assets.xcassets */; };
 		0B44A91028B19FE200DD0C68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B44A90E28B19FE200DD0C68 /* LaunchScreen.storyboard */; };
+		0B44A91828B1B7CF00DD0C68 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B44A91728B1B7CF00DD0C68 /* Language.swift */; };
+		0B44A91A28B1BC2F00DD0C68 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B44A91928B1BC2F00DD0C68 /* Word.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0B44A90028B19FDE00DD0C68 /* Vocabulary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vocabulary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B44A90328B19FDE00DD0C68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B44A90528B19FDE00DD0C68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0B44A90728B19FDE00DD0C68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0B44A90728B19FDE00DD0C68 /* LanguagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesViewController.swift; sourceTree = "<group>"; };
 		0B44A90A28B19FDE00DD0C68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B44A90C28B19FE200DD0C68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B44A90F28B19FE200DD0C68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B44A91128B19FE200DD0C68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B44A91728B1B7CF00DD0C68 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		0B44A91928B1BC2F00DD0C68 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				0B44A90328B19FDE00DD0C68 /* AppDelegate.swift */,
 				0B44A90528B19FDE00DD0C68 /* SceneDelegate.swift */,
-				0B44A90728B19FDE00DD0C68 /* ViewController.swift */,
+				0B44A91928B1BC2F00DD0C68 /* Word.swift */,
+				0B44A91728B1B7CF00DD0C68 /* Language.swift */,
+				0B44A90728B19FDE00DD0C68 /* LanguagesViewController.swift */,
 				0B44A90928B19FDE00DD0C68 /* Main.storyboard */,
 				0B44A90C28B19FE200DD0C68 /* Assets.xcassets */,
 				0B44A90E28B19FE200DD0C68 /* LaunchScreen.storyboard */,
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B44A90828B19FDE00DD0C68 /* ViewController.swift in Sources */,
+				0B44A90828B19FDE00DD0C68 /* LanguagesViewController.swift in Sources */,
+				0B44A91828B1B7CF00DD0C68 /* Language.swift in Sources */,
+				0B44A91A28B1BC2F00DD0C68 /* Word.swift in Sources */,
 				0B44A90428B19FDE00DD0C68 /* AppDelegate.swift in Sources */,
 				0B44A90628B19FDE00DD0C68 /* SceneDelegate.swift in Sources */,
 			);
