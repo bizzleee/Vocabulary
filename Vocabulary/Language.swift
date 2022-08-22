@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Language: NSObject {
+class Language: NSObject, Codable {
     var name = ""
     var words = [Word]()
 }

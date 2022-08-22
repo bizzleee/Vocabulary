@@ -8,6 +8,7 @@
 import Foundation
 
 
-class Word: NSObject {
-    
+class Word: NSObject, Codable {
+    var name = ""
+    var meaning = ""
 }
