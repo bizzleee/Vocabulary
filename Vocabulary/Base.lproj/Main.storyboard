@@ -24,7 +24,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="bjt-z8-bYe" kind="show" id="Bth-LZ-0KK"/>
+                                    <segue destination="bjt-z8-bYe" kind="show" identifier="LanguagesToWords" id="Bth-LZ-0KK"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -38,7 +38,6 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="mii-Kb-eVR">
                             <connections>
                                 <action selector="AddLanguage:" destination="hMa-5t-v2V" id="gfw-ab-uKh"/>
-                                <segue destination="wbP-dp-2mn" kind="show" id="FjL-EJ-WY1"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -47,54 +46,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SjY-7Q-XZ3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="955.07246376811599" y="75"/>
-        </scene>
-        <!--Language Words-->
-        <scene sceneID="XLf-c9-heh">
-            <objects>
-                <tableViewController id="wbP-dp-2mn" customClass="AddLanguageViewController" customModule="Vocabulary" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Smv-kx-5DM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <sections>
-                            <tableViewSection headerTitle="Name" id="HB4-Ya-Rtk">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Vab-qp-kov">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vab-qp-kov" id="Fn9-kt-NnI">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Languaje Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n4D-mo-p6z">
-                                                    <rect key="frame" x="20" y="5" width="384" height="34.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="n4D-mo-p6z" secondAttribute="bottom" constant="4.5" id="B4Y-J4-bAh"/>
-                                                <constraint firstItem="n4D-mo-p6z" firstAttribute="leading" secondItem="Fn9-kt-NnI" secondAttribute="leading" constant="20" symbolic="YES" id="BaG-CS-N5i"/>
-                                                <constraint firstItem="n4D-mo-p6z" firstAttribute="top" secondItem="Fn9-kt-NnI" secondAttribute="top" constant="5" id="UUr-co-t7S"/>
-                                                <constraint firstAttribute="trailing" secondItem="n4D-mo-p6z" secondAttribute="trailing" constant="10" id="VKT-rw-6br"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="wbP-dp-2mn" id="dJC-tE-ubV"/>
-                            <outlet property="delegate" destination="wbP-dp-2mn" id="7SW-wq-2oc"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Language Words" id="K4N-4t-IrV">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="nqk-OR-86T"/>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7fz-vC-pxR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1865" y="75"/>
         </scene>
         <!--Words View Controller-->
         <scene sceneID="EnT-cS-Tp4">
@@ -129,7 +80,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nfh-9m-ZFJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="678" y="802"/>
+            <point key="canvasLocation" x="955" y="802"/>
         </scene>
         <!--Add Word View Controller-->
         <scene sceneID="PTk-7g-WFp">
@@ -198,7 +149,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="asI-Rj-iTv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1487" y="802"/>
+            <point key="canvasLocation" x="1812" y="802"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XRu-su-598">
