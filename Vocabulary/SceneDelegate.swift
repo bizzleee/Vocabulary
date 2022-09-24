@@ -29,6 +29,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         controller.dataModel = dataModel
         
+        
+        
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 

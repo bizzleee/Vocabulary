@@ -68,9 +68,7 @@
 			children = (
 				0B44A90328B19FDE00DD0C68 /* AppDelegate.swift */,
 				0B44A90528B19FDE00DD0C68 /* SceneDelegate.swift */,
-				0BC96BB728B3122400E4D82C /* DataModel.swift */,
-				0B44A91928B1BC2F00DD0C68 /* Word.swift */,
-				0B44A91728B1B7CF00DD0C68 /* Language.swift */,
+				0B6E6CFA28D3EB36001C5AB7 /* Model */,
 				0B44A90728B19FDE00DD0C68 /* LanguagesViewController.swift */,
 				0B407B3628BAFFE100941283 /* WordsViewController.swift */,
 				0B407B3828BB003A00941283 /* AddWordViewController.swift */,
@@ -80,6 +78,16 @@
 				0B44A91128B19FE200DD0C68 /* Info.plist */,
 			);
 			path = Vocabulary;
+			sourceTree = "<group>";
+		};
+		0B6E6CFA28D3EB36001C5AB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0B44A91928B1BC2F00DD0C68 /* Word.swift */,
+				0BC96BB728B3122400E4D82C /* DataModel.swift */,
+				0B44A91728B1B7CF00DD0C68 /* Language.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

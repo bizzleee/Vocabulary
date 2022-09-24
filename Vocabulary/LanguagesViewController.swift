@@ -15,7 +15,6 @@ class LanguagesViewController: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        
     }
 
     //MARK: Tableview data source
@@ -29,8 +28,8 @@ class LanguagesViewController: UITableViewController {
             
             textField.placeholder = "Language name"
             
-            
         }
+        
         let action = UIAlertAction(title: "Add", style: .default) { _ in
           
             guard let field = alert.textFields?.first, let text = field.text, !text.isEmpty else {
@@ -52,7 +51,7 @@ class LanguagesViewController: UITableViewController {
         self.present(alert, animated: true)
     }
     
-    //This function Creates a new language object and add into a table view
+    //This function Creates a new language object and add this language  into a table view
     func addLanguage(language: Language) {
         
         let newIndexRow = dataModel.list.count
@@ -86,8 +85,20 @@ class LanguagesViewController: UITableViewController {
         }
     }
     
+    func configureText(for: UITableViewCell, with word: Word) {
+        
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataModel.list.count
+    }
+    
+    
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        dataModel.list.remove(at: indexPath.row)
+        
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
